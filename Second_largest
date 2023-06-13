@@ -1,0 +1,50 @@
+//Optimal solution to find second largest element in array
+
+
+
+int print2largest(int arr[], int n) 
+	{
+	    // code here
+	    int largest = arr[0];
+	    int slargest = -1;
+	    int i;
+	    for(i=0;i<n;i++)
+	    {
+	        if(arr[i]>slargest)
+	        {
+	            if(arr[i]>largest)
+	            {
+	                slargest = largest;
+	                largest = arr[i];
+	            }
+	            if(arr[i]<largest)
+	            {
+	                slargest = arr[i];
+	            }
+	        }
+	    }
+	    return slargest;
+
+
+int print2largest(int arr[], int n) 
+	{
+	    // code here
+	    int largest = arr[0];
+	    int slargest = -1;
+	    int i;
+	    for(i=0;i<n;i++)
+	    {
+	        if(arr[i]>slargest)
+	        {
+	            if(arr[i]>largest)
+	            {
+	                slargest = largest;
+	                largest = arr[i];
+	            }
+	            if(arr[i]<largest)
+	            {
+	                slargest = arr[i];
+	            }
+	        }
+	    }
+	    return slargest;
